@@ -1,0 +1,25 @@
+{
+  "name": "karmakit-shadowdom-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 create-icons.py && pnpm webpack --mode production && cp icon*.png dist/",
+    "dev": "webpack --mode development --watch",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "shadow-dom-selector": "^5.0.1"
+  }
+}
